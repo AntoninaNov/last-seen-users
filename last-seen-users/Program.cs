@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Net.Http;
+using System.Reflection;
 
 namespace LastSeenApplication
 {
@@ -9,10 +10,20 @@ namespace LastSeenApplication
     {
         static async Task Main(string[] args)
         {
+            // Ask user to select a language
+            Console.WriteLine("Select a language: [en] English, [ua] Ukrainian, [de] German, [es] Spanish, [fr] French");
+            string language = Console.ReadLine().ToLower();
+
+            // Fallback to English if input doesn't match any supported languages
+            if (!new[] { "en", "ua", "de", "es", "fr" }.Contains(language))
+            {
+                language = "en";
+            }
+
             try
             {
                 List<(string Username, DateTime? LastSeen)> parsedData = await LoadLastSeenDataAsync();
-                DisplayLastSeenData(parsedData, "en"); // Language set to English for this example
+                DisplayLastSeenData(parsedData, language); // Language set by user input
             }
             catch (HttpRequestException e)
             {
@@ -52,12 +63,13 @@ namespace LastSeenApplication
             {
                 if (data.LastSeen == null)
                 {
-                    Console.WriteLine($"{data.Username} {Localization.GetText("Online", language)}.");
+                    Console.WriteLine($"{data.Username} {LocalizationService.GetText("Online", language)}.");
                 }
                 else
                 {
-                    string humanReadableTime = TimeFormatter.GetHumanReadableTime(data.LastSeen);
-                    Console.WriteLine($"{data.Username} {Localization.GetText("WasOnline", language)} {humanReadableTime}.");
+                    // The TimeFormatter now accepts the 'language' parameter to return localized time descriptions
+                    string humanReadableTime = TimeFormatter.GetHumanReadableTime(data.LastSeen, language);
+                    Console.WriteLine($"{data.Username} {LocalizationService.GetText("WasOnline", language)} {humanReadableTime}.");
                 }
             }
         }

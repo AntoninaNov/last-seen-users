@@ -4,47 +4,52 @@ namespace LastSeenApplication
 {
     public static class TimeFormatter
     {
-        public static string GetHumanReadableTime(DateTime? lastSeenTime)
+        public static string GetHumanReadableTime(DateTime? lastSeenTime, string language)
         {
             if (lastSeenTime == null)
             {
-                return "Online";
+                return LocalizationService.GetText("Online", language);
             }
-            
+    
             TimeSpan difference = DateTime.UtcNow - lastSeenTime.Value.ToUniversalTime();
+            string timeKey;
 
             if (difference.TotalSeconds <= 30)
             {
-                return "just now";
+                timeKey = "JustNow";
             }
             else if (difference.TotalSeconds <= 59)
             {
-                return "less than a minute ago";
+                timeKey = "LessThanMinute";  // Changed key
             }
             else if (difference.TotalMinutes <= 59)
             {
-                return "couple of minutes ago";
+                timeKey = "CoupleOfMinutes";  // Changed key
             }
             else if (difference.TotalMinutes <= 119)
             {
-                return "an hour ago";
+                timeKey = "AnHourAgo";  // Changed key
             }
             else if (DateTime.UtcNow.Date == lastSeenTime.Value.ToUniversalTime().Date)
             {
-                return "today";
+                timeKey = "Today";
             }
             else if (DateTime.UtcNow.Date.AddDays(-1) == lastSeenTime.Value.ToUniversalTime().Date)
             {
-                return "yesterday";
+                timeKey = "Yesterday";
             }
             else if (difference.TotalDays < 7)
             {
-                return "this week";
+                timeKey = "ThisWeek";
             }
             else
             {
-                return "long time ago";
+                timeKey = "LongTimeAgo";
             }
+
+            // Get the localized string based on the time difference and language
+            return LocalizationService.GetText(timeKey, language);
         }
+
     }
 }
