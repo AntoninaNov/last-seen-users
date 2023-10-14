@@ -1,9 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "NY8HDy2kBZ8hsmVnAT7fKqKxokmf2bWXM3QPrEwKNTFFOUi2NbnzdYt3JHv1BUyk7eBcvFuXWjHbs+fUIiQsmg==",
+  "dgSpecHash": "M9yHbNS0BGvXtOB7af9EEeKOoW4MLq8C/dGfAok64nEuLgKHmeKmcZyMEs+UHRNrMYlurWocZp8YD9N3rCwE1Q==",
   "success": true,
   "projectFilePath": "/Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/last-seen-users.csproj",
   "expectedPackageFiles": [
+    "/Users/antoninanovak/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0-rc.2.23479.6/microsoft.extensions.dependencyinjection.abstractions.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "/Users/antoninanovak/.nuget/packages/microsoft.extensions.localization/8.0.0-rc.2.23480.2/microsoft.extensions.localization.8.0.0-rc.2.23480.2.nupkg.sha512",
+    "/Users/antoninanovak/.nuget/packages/microsoft.extensions.localization.abstractions/8.0.0-rc.2.23480.2/microsoft.extensions.localization.abstractions.8.0.0-rc.2.23480.2.nupkg.sha512",
+    "/Users/antoninanovak/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0-rc.2.23479.6/microsoft.extensions.logging.abstractions.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "/Users/antoninanovak/.nuget/packages/microsoft.extensions.options/8.0.0-rc.2.23479.6/microsoft.extensions.options.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "/Users/antoninanovak/.nuget/packages/microsoft.extensions.primitives/8.0.0-rc.2.23479.6/microsoft.extensions.primitives.8.0.0-rc.2.23479.6.nupkg.sha512",
     "/Users/antoninanovak/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
