@@ -50,5 +50,28 @@ namespace LastSeenApplication
             }
             return nearestTime;
         }
+        
+        public static int GetPredictedOnlineUsers(DateTime futureDate)
+        {
+            DayOfWeek day = futureDate.DayOfWeek;
+            int hour = futureDate.Hour;
+
+            // Check if we have historical data for this DayOfWeek and Hour
+            if (UserStatsDataStore.HistoricalUserStats.TryGetValue((day, hour), out List<int> historicalCounts))
+            {
+                if (historicalCounts.Count == 0)
+                {
+                    return 0; // No data available
+                }
+        
+                // Calculate average
+                return (int)Math.Round(historicalCounts.Average());
+            }
+            else
+            {
+                return 0; // No data available
+            }
+        }
+
     }
 }

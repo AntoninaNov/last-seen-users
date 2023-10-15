@@ -35,6 +35,16 @@ namespace LastSeenApplication
             int onlineCount = parsedData.Count(x => x.LastSeen == null);
             UserStatsDataStore.UserStats[DateTime.UtcNow] = onlineCount;
             
+            DayOfWeek today = DateTime.UtcNow.DayOfWeek;
+            int currentHour = DateTime.UtcNow.Hour;
+
+            if (!UserStatsDataStore.HistoricalUserStats.ContainsKey((today, currentHour)))
+            {
+                UserStatsDataStore.HistoricalUserStats[(today, currentHour)] = new List<int>();
+            }
+
+            UserStatsDataStore.HistoricalUserStats[(today, currentHour)].Add(onlineCount);
+
             return parsedData;
         }
 
@@ -136,9 +146,28 @@ namespace LastSeenApplication
                         Console.WriteLine("Invalid date format.");
                     }
                 }
+                
                 else
                 {
                     Console.WriteLine("Invalid choice. Exiting.");
+                }
+                
+                Console.WriteLine("Do you want to predict the number of users for a future date? (yes/no): ");
+                string shouldPredict = Console.ReadLine().ToLower();
+
+                if (shouldPredict == "yes")
+                {
+                    Console.WriteLine("Enter a future date (format: yyyy-MM-dd-HH:mm): ");
+                    string dateInput = Console.ReadLine(); // 2025-09-27-20:00
+                    if (DateTime.TryParseExact(dateInput, "yyyy-MM-dd-HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime futureDate))
+                    {
+                        int predictedCount = ApiEndpoints.GetPredictedOnlineUsers(futureDate);
+                        Console.WriteLine($"Predicted number of users online at {futureDate}: {predictedCount}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid date format.");
+                    }
                 }
             }
             catch (Exception e)
