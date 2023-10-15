@@ -10,7 +10,9 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
+      <PackageReference Include="Moq" Version="4.20.69" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="Nunit.Framework.TestCaseStorage" Version="1.0.1" />
     </ItemGroup>
 
 </Project>

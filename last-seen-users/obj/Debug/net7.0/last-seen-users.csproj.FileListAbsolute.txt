@@ -15,3 +15,7 @@
 /Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/obj/Debug/net7.0/last-seen-users.pdb
 /Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/obj/Debug/net7.0/last-seen-users.genruntimeconfig.cache
 /Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/obj/Debug/net7.0/ref/last-seen-users.dll
+/Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/bin/Debug/net7.0/Castle.Core.dll
+/Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/bin/Debug/net7.0/Moq.dll
+/Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/bin/Debug/net7.0/nunit.framework.dll
+/Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/bin/Debug/net7.0/nunit.framework.testcasestorage.dll
