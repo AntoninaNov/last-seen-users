@@ -8,72 +8,10 @@
     ".NETCoreApp,Version=v7.0": {
       "last-seen-users/1.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Localization": "8.0.0-rc.2.23480.2",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "last-seen-users.dll": {}
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0-rc.2.23479.6": {
-        "runtime": {
-          "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.47906"
-          }
-        }
-      },
-      "Microsoft.Extensions.Localization/8.0.0-rc.2.23480.2": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-rc.2.23479.6",
-          "Microsoft.Extensions.Localization.Abstractions": "8.0.0-rc.2.23480.2",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0-rc.2.23479.6",
-          "Microsoft.Extensions.Options": "8.0.0-rc.2.23479.6"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Localization.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.48002"
-          }
-        }
-      },
-      "Microsoft.Extensions.Localization.Abstractions/8.0.0-rc.2.23480.2": {
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.48002"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.0-rc.2.23479.6": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-rc.2.23479.6"
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.47906"
-          }
-        }
-      },
-      "Microsoft.Extensions.Options/8.0.0-rc.2.23479.6": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-rc.2.23479.6",
-          "Microsoft.Extensions.Primitives": "8.0.0-rc.2.23479.6"
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.Extensions.Options.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.47906"
-          }
-        }
-      },
-      "Microsoft.Extensions.Primitives/8.0.0-rc.2.23479.6": {
-        "runtime": {
-          "lib/net7.0/Microsoft.Extensions.Primitives.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.47906"
-          }
         }
       },
       "Newtonsoft.Json/13.0.3": {
@@ -91,48 +29,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0-rc.2.23479.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-QLTBDvE/E05Xl2UVFXOBFIW0VLn/mMJ8DSbTyK6ODsO3sqDs0fyPqydACTnX/nbGZRrTMeud3XDbUrt24ab1EA==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0-rc.2.23479.6",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0-rc.2.23479.6.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Localization/8.0.0-rc.2.23480.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-eAKha0KdqPXkgtF8ZZE2TBkOa5yDamZAKuW3MGXikxFB0ltuzqBF8exT20fnVVo84l7kDzgaX+KqWvaxC3Xv0g==",
-      "path": "microsoft.extensions.localization/8.0.0-rc.2.23480.2",
-      "hashPath": "microsoft.extensions.localization.8.0.0-rc.2.23480.2.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Localization.Abstractions/8.0.0-rc.2.23480.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HOCIDDcp3isEW0ECPQKvpXsWCI1mw7vFV/3zrlgRLAG57sF80deRT5GsbRb/q6Dq6HF3d/hUzNFgltXotvgpSA==",
-      "path": "microsoft.extensions.localization.abstractions/8.0.0-rc.2.23480.2",
-      "hashPath": "microsoft.extensions.localization.abstractions.8.0.0-rc.2.23480.2.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging.Abstractions/8.0.0-rc.2.23479.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-xuQcOpvz76nTYytCf9HrHGCbMq/PU/ZGSkhX/grDBfWHZ1gjz38hDjrYn4NMr5DnndNtou4yn6tR5q0hjCr9pw==",
-      "path": "microsoft.extensions.logging.abstractions/8.0.0-rc.2.23479.6",
-      "hashPath": "microsoft.extensions.logging.abstractions.8.0.0-rc.2.23479.6.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Options/8.0.0-rc.2.23479.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-f2uTnKEleplKK+pVKEg1rOCmM3+cuLpafTpKJzbj9lm8dmj0+dWxb0L6MAt9r1s3OYlIKY5IdkW0TUFKXvRCMg==",
-      "path": "microsoft.extensions.options/8.0.0-rc.2.23479.6",
-      "hashPath": "microsoft.extensions.options.8.0.0-rc.2.23479.6.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Primitives/8.0.0-rc.2.23479.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-I3fTiDmV+2cCR3VjH+oz49AMgrAqX1cmNiWXmEAituAI7jCLA16uXzvYQTwxhQzov5BTdPVXKGNTxsMb1GpcLQ==",
-      "path": "microsoft.extensions.primitives/8.0.0-rc.2.23479.6",
-      "hashPath": "microsoft.extensions.primitives.8.0.0-rc.2.23479.6.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",

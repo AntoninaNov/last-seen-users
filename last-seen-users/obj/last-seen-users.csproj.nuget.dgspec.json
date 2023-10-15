@@ -38,10 +38,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.Extensions.Localization": {
-              "target": "Package",
-              "version": "[8.0.0-rc.2.23480.2, )"
-            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"

@@ -15,9 +15,3 @@
 /Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/obj/Debug/net7.0/last-seen-users.pdb
 /Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/obj/Debug/net7.0/last-seen-users.genruntimeconfig.cache
 /Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/obj/Debug/net7.0/ref/last-seen-users.dll
-/Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
-/Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/bin/Debug/net7.0/Microsoft.Extensions.Localization.dll
-/Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/bin/Debug/net7.0/Microsoft.Extensions.Localization.Abstractions.dll
-/Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
-/Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
-/Users/antoninanovak/final_algorithms/last-seen-users/last-seen-users/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
