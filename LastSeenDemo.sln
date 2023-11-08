@@ -1,14 +1,14 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastSeenApplication", "LastSeenApplication\LastSeenApplication.csproj", "{8117BCB8-301A-48F9-9996-AD28E370FA23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastSeenDemo", "LastSeenDemo\LastSeenDemo.csproj", "{8117BCB8-301A-48F9-9996-AD28E370FA23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastSeenApplication.UnitTests", "LastSeenApplication.UnitTests\LastSeenApplication.UnitTests.csproj", "{A6997016-2B67-4793-B905-C6A7C4FDFECF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastSeenDemo.UnitTests", "LastSeenDemo.UnitTests\LastSeenDemo.UnitTests.csproj", "{A6997016-2B67-4793-B905-C6A7C4FDFECF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastSeenApplication.IntegrationTest", "LastSeenApplication.IntegrationTest\LastSeenApplication.IntegrationTest.csproj", "{EA987F52-AEA4-411F-BDFE-B6F1C4196E9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastSeenDemo.IntegrationTest", "LastSeenDemo.IntegrationTest\LastSeenDemo.IntegrationTest.csproj", "{EA987F52-AEA4-411F-BDFE-B6F1C4196E9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastSeenApplication.API", "LastSeenApplication.API\LastSeenApplication.API.csproj", "{17E21935-3596-4CF5-98ED-DECADE72B939}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastSeenDemo.API", "LastSeenDemo.API\LastSeenDemo.API.csproj", "{17E21935-3596-4CF5-98ED-DECADE72B939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastSeenApplication.E2E", "LastSeenApplication.E2E\LastSeenApplication.E2E.csproj", "{C6725805-AE7D-4652-889D-A15D0CB31ACB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastSeenDemo.E2E", "LastSeenDemo.E2E\LastSeenDemo.E2E.csproj", "{C6725805-AE7D-4652-889D-A15D0CB31ACB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{E4EAE598-1747-4B8D-B0E1-28E1C5834792}"
 EndProject
